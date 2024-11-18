@@ -1,0 +1,312 @@
+/* style.css */
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: #f0f8ff;
+   
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    max-width: 1200px;
+    padding:10px;
+    
+}
+
+.head-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), no-repeat center center/cover;
+  
+    color: rgb(251, 242, 242);
+    text-align: center;
+    padding: 20px 100px 100px 100px;
+    background-image:url('images\\bg_img4.jpg');
+    background-repeat: no-repeat;
+    opacity:0.8;
+    background-size: 100% 160%;
+}
+
+.head-section h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.head-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background: #0f1010;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background:rgb(227, 202, 227) ;
+    color: #040404;
+}
+
+.navbar {
+    background: #040404;
+    color: white;
+    padding: 10px 0;
+}
+
+.navbar ul {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: rgb(227, 239, 239);
+ 
+    text-decoration: none;
+    font-weight: bold;
+    font-size: medium;
+    font-family: monospace;
+}
+
+.navbar ul li a:hover {
+    text-decoration:none;
+    font-size:large;
+    background-color:rgb(227, 202, 227) ;
+    color: #040404;
+}
+h2{
+    text-align:center;
+}
+h3{
+    color:rgb(227, 202, 227) ;
+    padding-bottom:10%;
+    font-weight:1000;
+}
+
+.root-section{
+    text-align:justify ;
+    padding: 50px 0;
+}
+
+.services-section, .affirmations-section, .meditation-section {
+    padding: 50px 0;
+    text-align: center;
+
+}
+.services-section,.meditation-section{
+    background-color: rgb(227, 202, 227);
+}
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+   
+}
+.card:hover{
+    background-color: #040404;
+    color:rgb(227, 202, 227) ;
+}
+
+.card {
+    background: #e3f2fd;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    margin: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+.footer {
+    background: rgb(227, 202, 227);
+    color: rgb(18, 17, 17);
+    text-align: center;
+    padding: 20px 0;
+}
+
+.meditation-section audio {
+    margin-top: 20px;
+}
+.affirmations-section{
+    color:#040404;
+    
+}
+/* style.css */
+.mood-tracker-section, .positives-section {
+    padding: 50px 0;
+    text-align: center;
+}
+.mood-tracker-section{
+    background-color: rgb(227, 202, 227);
+}
+
+.moods {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    background-color: rgb(227, 202, 227);
+    color:rgb(227, 202, 227);
+}
+
+.mood-btn {
+    font-size: 20px;
+    
+}
+.moods button:hover{
+    background-color: #f8fcff;
+}
+#positive-input {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    margin: 20px auto;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    display: block;
+    background-color:rgb(227, 202, 227) ;
+}
+
+#positive-feedback {
+    margin-top: 20px;
+    font-style: italic;
+    color: #0d0e0e;
+}
+
+/*styles for the meditation and diary sections */
+.meditation-section, .diary-section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.diary-section .diary-gallery iframe {
+    margin: 15px;
+}
+
+#text-box{
+    width: 90%; 
+    max-width: 800px; 
+    padding: 15px; 
+    margin: 20px auto;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1.2rem;
+    display: block;
+    background-color: rgb(227, 202, 227) ;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+/* Responsive Enhancements */
+@media (max-width: 768px) {
+    .head-section {
+        padding: 20px;
+        background-size: cover;
+    }
+
+    .head-section h1 {
+        font-size: 2rem;
+    }
+
+    .head-section p {
+        font-size: 1rem;
+    }
+
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
+    .service-cards {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 90%;
+        margin: 10px auto;
+
+    }
+
+  
+
+    #positive-input {
+        width: 90%;
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
+    }
+
+    .moods {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+
+    audio {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .head-section h1 {
+        font-size: 1.5rem;
+    }
+
+    .head-section p {
+        font-size: 0.9rem;
+    }
+
+    .navbar ul li a {
+        font-size: 0.9rem;
+    }
+
+    .card h3 {
+        font-size: 1.2rem;
+    }
+
+    .card p {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        font-size: 0.8rem;
+    }
+
+    textarea, #positive-input {
+        font-size: 0.8rem;
+    }
+
+    h2, h3 {
+        font-size: 1.3rem;
+    }
+}
+
